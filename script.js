@@ -196,56 +196,17 @@ function page5Animation() {
 }
 page5Animation()
 
-function page6Animation(){
-    var footText = document.querySelectorAll(".page6 .let")
-    footText.forEach(function(elem){
-        var elemText  = elem.textContent
-        var splited = elemText.split("")
-        var clutter = ""
-        splited.forEach(function(e){
-            clutter += `<span>${e}</span>`
-        })
-        elem.innerHTML = clutter
-    })
 
-
-    var footerText = document.querySelector(".footer-text")
-
-    footerText.addEventListener("mouseenter",function(){
-        gsap.to(".page6 h1 span",{
-            opacity:0,
-            stagger:0.1,
-            duration:0.5
-        })
-        gsap.to(".page6 h2 span",{
-            opacity:1,
-            delay:0.4,
-            duration:0.5,
-            stagger:0.1
-        })
-    })
-
-    footerText.addEventListener("mouseleave",function(){
-        gsap.to(".page6 h2 span",{
-            opacity:0,
-            stagger:0.05,
-            duration:0.3
-        })
-        gsap.to(".page6 h1 span",{
-            opacity:1,
-            delay:0.4,
-            duration:0.3,
-            stagger:0.05
-        })
-    })
-}
-page6Animation()
+// Menu Toggle Logic
 var icon = document.querySelector(".nav-part1 img")
 var menu = document.querySelector(".menu-bar")
 var close = document.querySelector(".menu-bar1 svg")
-icon.addEventListener("click",function(){
-    menu.style.top = 0
-})
-close.addEventListener("click",function(){
-    menu.style.top = "-50%"
-})
+
+if (icon && menu && close) {
+    icon.addEventListener("click", function() {
+        menu.style.top = "0%"
+    })
+    close.addEventListener("click", function() {
+        menu.style.top = "-50%"
+    })
+}

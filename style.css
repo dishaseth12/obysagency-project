@@ -867,21 +867,6 @@ body{
     color: #fff;
     font-family: regular;
 }
-.footer-text h2{
-    color: #fff;
-    font-weight: 100;
-    font-size: 7vw;
-    text-transform: uppercase;
-    font-family: "silk serif";
-    position: absolute;
-    top: -8%;
-    height: 20vh;
-    /* overflow: auto; */
-    left: 0;
-    opacity: 1;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-}
 .footer-text h1::before{
     content: "04";
     color: #fff;
@@ -896,13 +881,7 @@ body{
     margin-left: 0;
     margin-top: 6vw;
 }
-.let h2 span{
-    /* color: red; */
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    opacity: 0;
-    font-family: "silk serif";
-}
+
 .page6-head{
     height: 50vh;
     width: 25vw;
@@ -954,4 +933,738 @@ body{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
     margin-top: 2vw;
+}
+
+
+/* ---------- Large laptops / small desktops ---------- */
+@media (max-width: 1200px){
+    .page1{
+        padding-left: 22vw;
+    }
+    .page3-head h1,
+    .page4 .page3-head h1{
+        padding-left: 22vw;
+    }
+    .underline{
+        margin-left: 22vw;
+    }
+    .page4-para{
+        padding-left: 22vw;
+    }
+    .page4-image1{
+        margin-left: 22vw;
+    }
+}
+
+/* ---------- Tablets (landscape) ---------- */
+@media (max-width: 1024px){
+    .nav-part{
+        width: 40vw;
+    }
+    .nav-part2 p,
+    .nav-part3 p{
+        font-size: 1.6vw;
+    }
+
+    .page1{
+        padding-left: 8vw;
+        padding-top: 22vh;
+    }
+    .page1-content{
+        height: auto;
+        margin-top: 0;
+    }
+    .page1-part{
+        height: auto;
+        margin-bottom: 1vh;
+    }
+    .page1-part h1{
+        font-size: 10vw;
+    }
+    .page1-part img{
+        display: none;
+    }
+
+    .page2-part{
+        width: 88vw;
+        left: 6vw;
+        height: 45vh;
+    }
+    .play-btn{
+        height: 16vw;
+        width: 16vw;
+        left: 40vw;
+    }
+    .play-btn i{
+        font-size: 4vw;
+    }
+
+    .page3{
+        height: auto;
+    }
+    .page3-head h1{
+        font-size: 10vw;
+        padding-left: 8vw;
+    }
+    .page3-head h1::before{
+        left: 2vw;
+        font-size: 5vw;
+    }
+    .underline{
+        width: 84vw;
+        margin-left: 8vw;
+    }
+    .page3-part1,
+    .page3-part2,
+    .page3-part3{
+        flex-direction: column;
+        align-items: center;
+        padding: 6vw;
+        gap: 8vw;
+        margin-top: 0;
+    }
+    .part1,
+    .part2{
+        height: auto;
+        width: 88vw;
+    }
+    .part1-image,
+    .part2 .part1-image,
+    .page3-part2 .part1 .part1-image,
+    .page3-part3 .part1 .part1-image{
+        height: 60vh;
+        width: 100%;
+    }
+    .part1-head h1{
+        font-size: 6vw;
+    }
+    .part1-para p{
+        font-size: 2.4vw;
+    }
+    .part1-para p:nth-child(1){
+        width: 60vw;
+        line-height: 3vw;
+    }
+    .part3-circle,
+    .page3-part2 .part3-circle,
+    .page3-part3 .part3-circle{
+        height: 45vw;
+        width: 45vw;
+        margin: 0 auto;
+    }
+    .page3-part3 .part3-circle{
+        margin-right: auto;
+        margin-top: 0;
+    }
+    .part3-circle svg{
+        height: 12vw;
+    }
+    .circle-in p{
+        font-size: 2.4vw;
+    }
+    .page3-part3 .part1{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .page3-part3 .part2{
+        height: auto;
+        width: 88vw;
+    }
+    .page3-part3 .part2 .part1-head h1{
+        font-size: 5vw;
+        height: auto;
+    }
+    .page3-lastpart{
+        height: 40vw;
+        width: 40vw;
+    }
+    .page3-lastpart h4{
+        font-size: 2.4vw;
+    }
+
+    .page4{
+        height: auto;
+        padding-bottom: 10vh;
+    }
+    .page4 .page3-head h1{
+        padding-left: 8vw;
+    }
+    .page4 .page3-head h1::before{
+        left: 2vw;
+    }
+    .page4-para{
+        padding-left: 8vw;
+        font-size: 3.6vw;
+        line-height: 4.4vw;
+        height: auto;
+        width: 90vw;
+    }
+    .page4-image1{
+        flex-direction: column;
+        margin-left: 8vw;
+        width: 88vw;
+        height: auto;
+        gap: 4vw;
+    }
+    .page4-image1 img{
+        width: 100%;
+        height: 50vh;
+    }
+    .page4-image1 .paragraph p{
+        font-size: 2.4vw;
+        width: 100%;
+        line-height: 3.4vw;
+    }
+    .paragraph p:nth-child(2){
+        width: 100%;
+    }
+    .page4-image2{
+        position: relative;
+        margin-left: 8vw;
+        margin-top: 5vw;
+        width: 88vw;
+        height: auto;
+        padding: 5vw;
+    }
+    .page4-image2 .awards{
+        height: auto;
+        padding: 2vw 0;
+    }
+    .awards h4{
+        font-size: 3.6vw;
+        width: auto;
+    }
+    .awards h6{
+        font-size: 2vw;
+        width: 40%;
+        text-align: right;
+    }
+    .page4-underline{
+        display: none;
+    }
+
+    .page5-mark h2,
+    .page5-marking h2{
+        font-size: 12vw;
+    }
+    .page5-mark h3,
+    .page5-marking h3{
+        font-size: 12vw;
+    }
+
+    .page6{
+        padding-left: 8vw;
+    }
+    .footer-text h1,
+    .footer-text h2{
+        font-size: 11vw;
+    }
+    .footer-text h1::before{
+        left: -6vw;
+        font-size: 5vw;
+    }
+    .display{
+        flex-wrap: wrap;
+    }
+    .page6-head{
+        width: 45vw;
+        height: auto;
+        margin-bottom: 4vh;
+    }
+    .page6-text h5{
+        font-size: 3.4vw;
+    }
+    .page6-underline{
+        width: 84vw;
+    }
+}
+
+/* ---------- Tablets (portrait) ---------- */
+@media (max-width: 768px){
+    .nav{
+        padding: 5vw 6vw;
+        align-items: center;
+    }
+    .nav-part{
+        width: 60vw;
+    }
+    .nav-part1 img{
+        height: 5vw;
+    }
+    .nav-part1 svg{
+        width: 16vw;
+        height: auto;
+    }
+    .nav-part2{
+        display: none;
+    }
+    .nav-part3{
+        display: none;
+    }
+
+    .menu-bar{
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .menu-bar1{
+        padding: 20vw 6vw 6vw;
+    }
+    .menu-bar1 svg{
+        top: 6vw;
+        left: 6vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .menu-text{
+        height: auto;
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+    .menu-bar1 h1,
+    .menu-bar1 h2,
+    .menu-bar1 h3{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .menu-bar2{
+        padding: 0 6vw 10vw;
+        gap: 8vw;
+    }
+    .menu-bar2 h2{
+        font-size: 4vw;
+    }
+    .menu-bar2 .menu-content1 h1{
+        font-size: 5vw;
+    }
+    .menu-content1{
+        height: 7vw;
+    }
+
+    .page1{
+        padding-left: 6vw;
+        padding-top: 24vh;
+    }
+    .page1-part h1{
+        font-size: 13vw;
+    }
+    .page1-part:nth-child(3){
+        flex-wrap: wrap;
+        gap: 3vw;
+    }
+
+    .page2-part{
+        width: 90vw;
+        left: 5vw;
+        height: 32vh;
+    }
+    .play-btn{
+        height: 20vw;
+        width: 20vw;
+        left: 35vw;
+        top: -8vw;
+    }
+    .play-btn i{
+        font-size: 5vw;
+    }
+
+    .page3-head h1{
+        font-size: 13vw;
+        padding-left: 6vw;
+        padding-top: 10vw;
+    }
+    .page3-head h1::before{
+        top: 12vw;
+        left: 1vw;
+        font-size: 7vw;
+    }
+    .underline{
+        width: 88vw;
+        margin-left: 6vw;
+        margin-top: 6vw;
+    }
+    .page3-part1,
+    .page3-part2,
+    .page3-part3{
+        padding: 8vw 5vw;
+    }
+    .part1,
+    .part2{
+        width: 90vw;
+    }
+    .part1-head h1{
+        font-size: 8vw;
+    }
+    .part1-para p{
+        font-size: 3.2vw;
+    }
+    .part1-para p:nth-child(1){
+        width: 55vw;
+        line-height: 4vw;
+    }
+    .part3-circle,
+    .page3-part2 .part3-circle,
+    .page3-part3 .part3-circle{
+        height: 60vw;
+        width: 60vw;
+    }
+    .part3-circle svg{
+        height: 16vw;
+    }
+    .circle-in p{
+        font-size: 3.4vw;
+    }
+    .page3-part3 .part2{
+        width: 90vw;
+    }
+    .page3-part3 .part2 .part1-head h1{
+        font-size: 7vw;
+    }
+    .page3-lastpart{
+        height: 55vw;
+        width: 55vw;
+    }
+    .page3-lastpart h4{
+        font-size: 3.4vw;
+    }
+
+    .page4 .page3-head h1{
+        padding-left: 6vw;
+        padding-top: 10vw;
+    }
+    .page4 .page3-head h1::before{
+        top: 12vw;
+        left: 1vw;
+    }
+    .page4-para{
+        padding-left: 6vw;
+        font-size: 5vw;
+        line-height: 6vw;
+        width: 88vw;
+    }
+    .page4-image1{
+        margin-left: 6vw;
+        width: 88vw;
+    }
+    .page4-image1 img{
+        height: 40vh;
+    }
+    .page4-image1 .paragraph p{
+        font-size: 3.4vw;
+        line-height: 4.6vw;
+    }
+    .page4-image2{
+        margin-left: 6vw;
+        width: 88vw;
+        padding: 6vw;
+    }
+    .awards h4{
+        font-size: 4.6vw;
+    }
+    .awards h6{
+        font-size: 2.6vw;
+    }
+
+    .page5{
+        height: auto;
+        padding: 6vh 0;
+    }
+    .page5-mark,
+    .page5-marking{
+        height: 10vh;
+    }
+    .page5-mark h2,
+    .page5-marking h2,
+    .page5-mark h3,
+    .page5-marking h3{
+        font-size: 16vw;
+    }
+
+    .page6{
+        padding-left: 6vw;
+        height: auto;
+        padding-bottom: 8vh;
+    }
+    .footer-text{
+        height: auto;
+    }
+    .footer-text h1,
+    .footer-text h2{
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+    .footer-text h1::before{
+        left: -5vw;
+        top: -2vw;
+        font-size: 6vw;
+    }
+    .display{
+        flex-direction: column;
+    }
+    .page6-head{
+        width: 100%;
+        height: auto;
+        padding-top: 4vw;
+    }
+    .page6-head h6{
+        font-size: 3.6vw;
+    }
+    .page6-text{
+        height: 8vw;
+    }
+    .page6-text h5{
+        font-size: 5vw;
+    }
+    .page6-underline{
+        width: 88vw;
+        margin-top: 6vw;
+    }
+    .page6 h4{
+        font-size: 3vw;
+    }
+}
+
+/* ---------- Mobile phones ---------- */
+@media (max-width: 480px){
+    .home{
+        padding-top: 30vw;
+        padding-left: 6vw;
+    }
+    .load h1,
+    .load h2{
+        font-size: 7vw;
+    }
+    .load h3{
+        font-size: 11vw;
+    }
+
+    .nav{
+        padding: 6vw;
+    }
+    .nav-part1 img{
+        height: 6vw;
+    }
+    .nav-part1 svg{
+        width: 22vw;
+    }
+
+    .menu-bar1 h1,
+    .menu-bar1 h2,
+    .menu-bar1 h3{
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+    .menu-bar2 h2{
+        font-size: 5vw;
+    }
+    .menu-bar2 .menu-content1 h1{
+        font-size: 6vw;
+    }
+    .menu-content1{
+        height: 9vw;
+    }
+
+    .page1{
+        padding-left: 5vw;
+        padding-top: 26vh;
+    }
+    .page1-part h1{
+        font-size: 15vw;
+    }
+    .page1-part:nth-child(3) h1{
+        font-size: 12vw;
+    }
+
+    .page2-part{
+        width: 92vw;
+        left: 4vw;
+        height: 24vh;
+    }
+    .play-btn{
+        height: 26vw;
+        width: 26vw;
+        left: 32vw;
+        top: -10vw;
+    }
+    .play-btn i{
+        font-size: 6vw;
+    }
+
+    .page3-head h1{
+        font-size: 16vw;
+        padding-left: 5vw;
+    }
+    .page3-head h1::before{
+        font-size: 8vw;
+        left: 0;
+        top: 10vw;
+    }
+    .underline{
+        margin-left: 5vw;
+        width: 90vw;
+    }
+    .page3-part1,
+    .page3-part2,
+    .page3-part3{
+        padding: 8vw 5vw;
+        gap: 12vw;
+    }
+    .part1,
+    .part2{
+        width: 90vw;
+    }
+    .part1-image,
+    .part2 .part1-image,
+    .page3-part2 .part1 .part1-image,
+    .page3-part3 .part1 .part1-image{
+        height: 45vh;
+    }
+    .part1-head h1{
+        font-size: 10vw;
+    }
+    .part1-para{
+        flex-direction: column;
+    }
+    .part1-para p{
+        font-size: 4vw;
+        margin-top: 3vw;
+    }
+    .part1-para p:nth-child(1){
+        width: 100%;
+        line-height: 5vw;
+    }
+    .part3-circle,
+    .page3-part2 .part3-circle,
+    .page3-part3 .part3-circle{
+        height: 75vw;
+        width: 75vw;
+    }
+    .part3-circle svg{
+        height: 20vw;
+    }
+    .circle-in{
+        padding: 6vw;
+    }
+    .circle-in p{
+        font-size: 4.5vw;
+    }
+    .page3-part3 .part2{
+        width: 90vw;
+    }
+    .page3-part3 .part2 .part1-head h1{
+        font-size: 8vw;
+    }
+    .page3-lastpart{
+        height: 65vw;
+        width: 65vw;
+    }
+    .page3-lastpart h4{
+        font-size: 4.5vw;
+    }
+
+    .page4 .page3-head h1{
+        padding-left: 5vw;
+    }
+    .page4 .page3-head h1::before{
+        left: 0;
+        top: 10vw;
+    }
+    .page4-para{
+        padding-left: 5vw;
+        font-size: 6.5vw;
+        line-height: 8vw;
+        width: 90vw;
+    }
+    .page4-image1{
+        margin-left: 5vw;
+        width: 90vw;
+    }
+    .page4-image1 img{
+        height: 32vh;
+    }
+    .page4-image1 .paragraph p{
+        font-size: 4vw;
+        line-height: 5.5vw;
+    }
+    .page4-image2{
+        margin-left: 5vw;
+        width: 90vw;
+        padding: 6vw;
+        margin-top: 8vw;
+    }
+    .page4-image2 .awards{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 3vw 0;
+    }
+    .awards h4{
+        font-size: 6vw;
+    }
+    .awards h6{
+        font-size: 3.4vw;
+        width: 100%;
+        text-align: left;
+        margin-top: 1vw;
+    }
+
+    .page5-mark h2,
+    .page5-marking h2,
+    .page5-mark h3,
+    .page5-marking h3{
+        font-size: 20vw;
+    }
+
+    .page6{
+        padding-left: 5vw;
+    }
+    .footer-text h1,
+    .footer-text h2{
+        font-size: 17vw;
+        line-height: 17vw;
+    }
+    .footer-text h1::before{
+        left: -4vw;
+        top: -4vw;
+        font-size: 7vw;
+    }
+    .page6-head h6{
+        font-size: 4.4vw;
+    }
+    .page6-text h5{
+        font-size: 6vw;
+    }
+    .page6-underline{
+        width: 90vw;
+    }
+    .page6 h4{
+        font-size: 3.6vw;
+    }
+}
+
+/* ---------- Very small phones ---------- */
+@media (max-width: 380px){
+    .page1-part h1{
+        font-size: 16vw;
+    }
+    .page3-head h1{
+        font-size: 17vw;
+    }
+    .footer-text h1,
+    .footer-text h2{
+        font-size: 18vw;
+        line-height: 18vw;
+    }
+}
+
+/* ---------- Landscape phones (short height) ---------- */
+@media (max-height: 480px) and (orientation: landscape){
+    .home{
+        padding-top: 8vw;
+    }
+    .page1{
+        padding-top: 18vh;
+    }
+    .page2-part{
+        height: 60vh;
+    }
 }
